@@ -19,7 +19,7 @@ function ShoppingList({ items }) {
 //  const [foods, setFoods] = useState(spicyFoods);
 // const [filterBy, setFilterBy] = useState("All");
 
-const itemsToDisplay = Object.values(items).filter((item) => {
+const itemsToDisplay = (items).filter((item) => {
   if (selectedCategory === "All") {
     return true;
   } else {
